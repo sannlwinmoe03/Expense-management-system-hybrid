@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel = "stylesheet" href = "js/jquery.mobile-1.4.5.min.css">
+    <script src = "js/jquery-2.2.4.min.js"></script>
+    <script src = "js/jquery.mobile-1.4.5.min.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="js/myjs.js"></script>
+
+    <title> PhoneGap App </title>
+</head>
+
+<body onload="onBodyLoad()">
+
+<div data-role="page" id="pageone">
+    <div data-role="header">
+        <h1>Home</h1>
+    </div>
+
+    <div data-role="content">
+        <p>Hello, it is my PhoneGap App.</p>
+        <div class="networkInfo" id="networkInfo">
+
+        </div>
+
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="next.html" data-role="button" data-transition="slidedown">Go Next</a>
+                </li>
+                <li><a href="login.html" data-role="button" data-transition="flow">Login</a>
+                </li>
+                <li><a href="bookstore.html" data-role="button">Book Store</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

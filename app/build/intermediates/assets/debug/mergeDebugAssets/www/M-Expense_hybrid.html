@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel = "stylesheet" href = "js/jquery.mobile-1.4.5.min.css">
+    <script src = "js/jquery-2.2.4.min.js"></script>
+    <script src = "js/jquery.mobile-1.4.5.min.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="js/M-Expense_hybrid.js"></script>
+
+    <title> My App </title>
+</head>
+
+<body>
+
+<div data-role="page">
+    <div data-role="header">
+        <h1>M-Expense</h1>
+    </div>
+
+    <div data-role="content">
+        <form>
+        <div id="addTrip">
+
+
+                <input required type="text" id="trip_name" placeholder="Trip Name"/>
+                <input required type="text" id="destination" placeholder="Destination"/>
+                <br>
+                <span class="input-group-text">Select Trip Date</span>
+                <input required type="date" id="trip_date"/>
+                <div data-type="horizontal" class="input-group">
+                    <span class="input-group-text">Risk Assessment</span>
+                    <input name="risk" value="Yes" type="radio" id="Yes" class="form-control"/>
+                    <label for="Yes">Yes</label>
+                    <input name="risk" value="No" type="radio" id="No" class="form-control"/>
+                    <label for="No">No</label>
+                </div>
+
+                <input type="text" id="description" placeholder="Description(Optional)"/>
+                <br>
+                <span class="input-group-text">Departure Time</span>
+                <input required type="time" id="time" placeholder="Departure Time"/>
+                <input required type="number" id="e_count" placeholder="Employee Count"/>
+
+                <input type="button" id="btnSave" value="Save"/>
+
+
+        </div>
+
+        <div id="updateTrip">
+
+
+                <input required type="text" id="utrip_name" placeholder="Trip Name"/>
+                <input required type="text" id="udestination" placeholder="Destination"/>
+                <br>
+                <span class="input-group-text">Select Trip Date</span>
+                <input required type="date" id="utrip_date"/>
+                <div data-type="horizontal" class="input-group">
+                    <span class="input-group-text">Risk Assessment</span>
+                    <input name="risk" value="Yes" type="radio" id="uYes" class="form-control"/>
+                    <label for="uYes">Yes</label>
+                    <input name="risk" value="No" type="radio" id="uNo" class="form-control"/>
+                    <label for="uNo">No</label>
+                </div>
+
+                <input type="text" id="udescription" placeholder="Description(Optional)"/>
+                <br>
+                <span class="input-group-text">Departure Time</span>
+                <input required type="time" id="utime" placeholder="Departure Time"/>
+                <input required type="number" id="ue_count" placeholder="Employee Count"/>
+
+                <input type="button" class="ubtnSave" value="Update"/>
+
+
+        </div>
+
+        </form>
+
+
+
+        <div id="showTrip"></div>
+
+    </div>
+
+
+
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+
+                <li><a id='deleteAll' data-role="button" data-icon="delete">Delete All</a></li>
+                <li><a id='home' onclick="location.href='M-Expense_hybrid.html'" data-role="button" data-icon="home">Home</a></li>
+                <li><a id='btnAddTrip' data-role="button" data-icon="plus">Trip Add</a>
+
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
